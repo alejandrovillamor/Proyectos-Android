@@ -1,5 +1,7 @@
 package com.example.mvp_netflix_01.contract;
 
+import com.example.mvp_netflix_01.model.pojo.User;
+
 public interface LoginContract {
     public interface View{
         void successLogin(User user, String message);

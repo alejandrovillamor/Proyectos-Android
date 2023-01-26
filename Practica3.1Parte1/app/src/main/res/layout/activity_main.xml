@@ -24,7 +24,6 @@
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="1"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:gravity="center"
@@ -40,7 +39,6 @@
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="1"
             android:background="@drawable/edittext_background"
             android:ems="10"
             android:gravity="center"
@@ -52,8 +50,10 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@drawable/login_btn_background"
             android:text="Login" />

@@ -12,6 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Componentes Básicos Android"
-include ':app'
+rootProject.name = "MVP-SIMPSON-01"
 include ':app'

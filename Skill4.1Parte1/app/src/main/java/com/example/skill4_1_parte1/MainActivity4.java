@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class MainActicity4 extends AppCompatActivity {
+public class MainActivity4 extends AppCompatActivity {
 
     ToggleButton tgbtn;
     TextView txtEti;

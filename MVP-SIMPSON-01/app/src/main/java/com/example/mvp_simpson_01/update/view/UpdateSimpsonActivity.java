@@ -1,6 +1,7 @@
 package com.example.mvp_simpson_01.update.view;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +21,7 @@ public class UpdateSimpsonActivity extends AppCompatActivity implements UpdateSi
         initComponentes();
         initPresenter();
         initData();
-        lstSimpsonPresenter.lstSimpson(null);
+        updateSimpsonPresenter.UpdateSimpson(null);
     }
 
     public void initComponentes(){
@@ -28,10 +29,11 @@ public class UpdateSimpsonActivity extends AppCompatActivity implements UpdateSi
     }
     public  void  initPresenter(){
 
-        lstSimpsonPresenter = new LstSimpsonPresenter();
+        updateSimpsonPresenter = new UpdateSimpsonPresenter(this);
     }
     public void initData(){
-        lstSimpsonPresenter.lstSimpson(null);//Select * from simpson
+
+        updateSimpsonPresenter.UpdateSimpson(null);//Select * from simpson
     }
 
     @Override
@@ -41,6 +43,6 @@ public class UpdateSimpsonActivity extends AppCompatActivity implements UpdateSi
 
     @Override
     public void failurUpdateSimpson(String err) {
-
+        Toast.makeText(this, "No se ha podidio actualizar", Toast.LENGTH_SHORT).show();
     }
 }

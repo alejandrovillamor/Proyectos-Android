@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class LstSimpsonPresenter implements LstSimpsonContract.Presenter {
    private LstSimpsonModel lstSimpsonModel;
     public  LstSimpsonPresenter(){
+
         lstSimpsonModel = new LstSimpsonModel();
     }
     @Override

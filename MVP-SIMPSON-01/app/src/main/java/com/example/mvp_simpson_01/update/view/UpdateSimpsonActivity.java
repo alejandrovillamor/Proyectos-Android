@@ -1,21 +1,18 @@
-package com.example.mvp_simpson_01.lst_simpson.view;
+package com.example.mvp_simpson_01.update.view;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.Toast;
-
 import com.example.mvp_simpson_01.R;
-import com.example.mvp_simpson_01.lst_simpson.LstSimpsonContract;
 import com.example.mvp_simpson_01.lst_simpson.model.pojo.Simpson;
 import com.example.mvp_simpson_01.lst_simpson.presenter.LstSimpsonPresenter;
+import com.example.mvp_simpson_01.update.presenter.UpdateSimpsonPresenter;
 
-import java.util.ArrayList;
+public class UpdateSimpsonActivity extends AppCompatActivity implements UpdateSimpsonContract.View {
 
-public class LstSimpsonActivity extends AppCompatActivity  implements LstSimpsonContract.View {
-    private LstSimpsonPresenter lstSimpsonPresenter;
+    private UpdateSimpsonPresenter updateSimpsonPresenter;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lst_simpson);
@@ -25,6 +22,7 @@ public class LstSimpsonActivity extends AppCompatActivity  implements LstSimpson
         initData();
         lstSimpsonPresenter.lstSimpson(null);
     }
+
     public void initComponentes(){
 
     }
@@ -37,12 +35,12 @@ public class LstSimpsonActivity extends AppCompatActivity  implements LstSimpson
     }
 
     @Override
-    public void successLstSimpson(ArrayList<Simpson> lstSimpson) {
+    public void successUpdateSimpson(Simpson simpson, String message) {
 
     }
 
     @Override
-    public void failureLstSimpson(String err) {
-        Toast.makeText(this,"Los datos no han podido ser cargados", Toast.LENGTH_SHORT ).show();
+    public void failurUpdateSimpson(String err) {
+
     }
 }

@@ -10,6 +10,7 @@ public interface LstSimpsonContract {
        void failureLstSimpson(String err);
     }
     public  interface Presenter{
+        //CASO DE USO
         void lstSimpson(Simpson simpson);
     }
     public interface  Model{

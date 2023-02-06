@@ -32,6 +32,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name="com.example.mvp_simpson_01.update.view.UpdateSimpsonActivity" />
     </application>
 
 </manifest>

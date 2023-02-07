@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.mvp_simpson_01.R;
+import com.example.mvp_simpson_01.entities.Simpson;
 import com.example.mvp_simpson_01.lst_simpson.LstSimpsonContract;
 import com.example.mvp_simpson_01.lst_simpson.model.pojo.Simpson;
 import com.example.mvp_simpson_01.lst_simpson.presenter.LstSimpsonPresenter;
@@ -38,6 +39,8 @@ public class LstSimpsonActivity extends AppCompatActivity  implements LstSimpson
 
     @Override
     public void successLstSimpson(ArrayList<Simpson> lstSimpson) {
+
+        Toast.makeText(this, lstSimpson.get(0).toString(), Toast.LENGTH_SHORT).show();
 
     }
 

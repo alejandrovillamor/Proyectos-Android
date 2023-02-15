@@ -10,8 +10,8 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
-    @GET("pokemon")
-    Call<ArrayList<Pokemon>> getPokemons();
+   // @GET("pokemon")
+   // Call<ArrayList<Pokemon>> getPokemons();
 
     @GET("pokemon")
     Call<PokemonRespuesta> getPokemons(@Query("limit") int limit, @Query("offset") int offset);

@@ -42,7 +42,7 @@ public class RVRetrofitAdapter  extends RecyclerView.Adapter<RVRetrofitAdapter.R
 
     @Override
     public int getItemCount() {
-        return 0;
+        return productResults.size();
     }
 
     public  class  RVHolderRetrofit extends RecyclerView.ViewHolder{
